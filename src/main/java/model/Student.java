@@ -2,13 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Info;
+package model;
 
 /**
  *
  * @author HP
  */
-public class Student implements Comparable<Student>{
+public class Student implements Comparable<Student> {
+
     private String name;
     private float mark;
     private String classes;
@@ -46,10 +47,9 @@ public class Student implements Comparable<Student>{
         this.classes = classes;
     }
 
-    
     @Override
     public int compareTo(Student o) {
         return this.name.compareTo(o.name);
     }
-    
+
 }
